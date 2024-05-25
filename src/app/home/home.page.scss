@@ -1,27 +1,28 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+/* css ion */
+ion-header {
+  --background: #d53b47;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+ion-toolbar {
+  --background: #d53b47;
+  --color: white;
+}
+ion-card {
+  --background: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+:host ion-card {
+  --background: none;
 }
 
-#container a {
-  text-decoration: none;
+.ion-color-success {
+  --ion-color-contrast: #fff !important;
+}
+
+ion-infinite-scroll {
+  max-height: 30px;
 }
