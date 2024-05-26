@@ -19,6 +19,10 @@ const routes: Routes = [
     path: 'skeleton',
     loadChildren: () => import('./skeleton/skeleton.module').then( m => m.SkeletonPageModule)
   },
+  {
+    path: 'favorite',
+    loadChildren: () => import('./favorite/favorite.module').then( m => m.FavoritePageModule)
+  },
 ];
 
 @NgModule({

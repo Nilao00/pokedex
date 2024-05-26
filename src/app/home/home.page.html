@@ -18,7 +18,7 @@
 
   <div *ngIf="results.length > 0; else notFoundRegister" class="containerList">
     <ion-card *ngFor="let pokemon of results">
-      <div (click)="getDetailsPokemon(pokemon.name,false,true)" >
+      <div (click)="getDetailsPokemon(pokemon.name,false,true)" style="position: relative;">
         <ion-img alt="{{pokemon.name}}" src="{{pokemon.url}}" *ngIf="pokemon.url; else notFoundImg" class="imageCard" />
         <ng-template #notFoundImg>
           <div>

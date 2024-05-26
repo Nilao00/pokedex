@@ -8,6 +8,8 @@
 
 <ion-content [fullscreen]="true">
   <div class="header">
+    <ion-icon name="heart-outline" class="styledIconFavorite" (click)="addFavorite(true)" *ngIf="!isFavorite"></ion-icon>
+    <ion-icon name="heart" class="styledIconFavoriteFound" (click)="removeFavorite(true)" *ngIf="isFavorite"></ion-icon>
     <ion-img src="{{objetoRecebido?.sprites?.front_default}}" class="styleHeaderImg" />
   </div>
 
@@ -21,4 +23,7 @@
       <p class="moveStyleName">{{power.move.name}}</p>
     </div>
   </div>
+  <ion-alert [isOpen]="isAlertOpen" header="Atenção" 
+    message="{{msgInfo}}" [buttons]="alertButtons"
+    (didDismiss)="dimissAlert(false)"></ion-alert>
 </ion-content>

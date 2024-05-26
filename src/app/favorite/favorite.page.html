@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Favorites
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <div *ngIf="favorites.length > 0; else notFoundRegister" class="containerList">
+      <ion-card *ngFor="let pokemon of favorites">
+        <ion-img alt="{{pokemon.name}}" src="{{pokemon.url}}" class="imageCard" />
+      
+        <ion-card-content>
+          {{pokemon.name}}
+        </ion-card-content>
+      </ion-card>
+    </div>
+    <ion-card>
+      <ng-template #notFoundRegister>
+        <ion-card-content>
+          Não foram encontrados pokémons.
+        </ion-card-content>
+      </ng-template>
+    </ion-card>
+  </ion-item>
+</ion-content>
