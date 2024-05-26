@@ -20,6 +20,7 @@ export class HomePage {
   objectParams: any = null;
   pokemonsPros: pokemonPros | null = null;
   @ViewChild(IonInfiniteScroll, { static: true }) infiniteScroll: IonInfiniteScroll;
+  @ViewChild('elements') elementsTemplate: any;
   informationsResult:
     [{
       name: string;
@@ -47,7 +48,10 @@ export class HomePage {
   }
 
   ionViewDidEnter() {
+    this.offset = 0;
     this.results = [];
+    this.total = 0;
+    this.search = "";
     this.listPokemons();
   }
 

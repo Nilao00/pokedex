@@ -12,11 +12,16 @@ ion-card {
   --background: none;
 }
 
+.imageCard {
+  display: flex;
+  justify-content: center;
+}
+
 .containerList {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 :host ion-card {
