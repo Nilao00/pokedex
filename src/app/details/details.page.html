@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      {{objetoRecebido?.name}}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="header">
+    <ion-img src="{{objetoRecebido?.sprites?.front_default}}" class="styleHeaderImg" />
+  </div>
+
+  <div class="informationsBasics">
+    <div class="infoTextStyled"><b>Height: </b><span style="color:darkblue">{{objetoRecebido?.height}}</span></div>
+    <div class="infoTextStyled"><b>Weight: </b><span style="color:crimson">{{objetoRecebido?.weight}}</span></div>
+  </div>
+  <p class="labelTextPower">Powers:</p>
+  <div class="containerStyledMoves">
+    <div class="movesStyles" *ngFor="let power of objetoRecebido?.moves">
+      <p class="moveStyleName">{{power.move.name}}</p>
+    </div>
+  </div>
+</ion-content>

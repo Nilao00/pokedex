@@ -7,8 +7,12 @@ ion-toolbar {
   --background: #d53b47;
   --color: white;
 }
+
 ion-card {
   --background: none;
+}
+
+.containerList {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
