@@ -1,4 +1,4 @@
-import { Component, TemplateRef, ViewChild } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { IonInfiniteScroll, NavController } from '@ionic/angular';
 import { catchError } from 'rxjs/operators';
 import { orderBy } from 'lodash';
