@@ -9,3 +9,4 @@ Passos para rodar o projeto:
  2 - rodar o comando "ionic serve" para iniciar o projeto.
 
 OBS: node 18 + para rodar recomendado. Busca feita pelo no exato do pokemon sem like.
+Branch: "Master"
