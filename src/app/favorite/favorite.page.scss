@@ -1,0 +1,43 @@
+/* css ion */
+ion-header {
+    --background: #d53b47;
+  }
+  
+  ion-toolbar {
+    --background: #d53b47;
+    --color: white; 
+    --display: flex;
+    --flex-direction: row;
+    --align-items: center;
+    --justify-content: space-between;
+    --width: 100%;
+  }
+  
+  ion-card {
+    --background: none;
+  }
+  
+  .imageCard {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .containerList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  :host ion-card {
+    --background: none;
+  }
+  
+  .ion-color-success {
+    --ion-color-contrast: #fff !important;
+  }
+  
+  ion-infinite-scroll {
+    max-height: 30px;
+  }
+  

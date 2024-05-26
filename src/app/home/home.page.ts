@@ -69,6 +69,10 @@ export class HomePage {
     })
   }
 
+  goToFavorite() {
+    this.nav.navigateForward("favorite");
+  }
+
   changeForClear(search: any) {
     if (!search) {
       this.results = [];

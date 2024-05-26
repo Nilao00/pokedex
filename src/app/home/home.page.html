@@ -3,6 +3,9 @@
     <ion-title>
       Pokédex
     </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="goToFavorite()">Favoritos</ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
@@ -31,7 +34,7 @@
       </div>
     </ion-card>
   </div>
-  <ion-card >
+  <ion-card>
     <ng-template #notFoundRegister>
       <ion-card-content *ngIf="!loading">
         Não foram encontrados pokémons.

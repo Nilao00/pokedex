@@ -5,7 +5,12 @@ ion-header {
 
 ion-toolbar {
   --background: #d53b47;
-  --color: white;
+  --color: white; 
+  --display: flex;
+  --flex-direction: row;
+  --align-items: center;
+  --justify-content: space-between;
+  --width: 100%;
 }
 
 ion-card {
@@ -33,15 +38,5 @@ ion-card {
 }
 
 ion-infinite-scroll {
-  max-height: 30px;
-}
-
-.styledIconFavorite {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin-right: 5%;
-  margin-top: 5%;
-  max-width: 30px;
   max-height: 30px;
 }

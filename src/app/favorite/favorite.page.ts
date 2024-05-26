@@ -6,10 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./favorite.page.scss'],
 })
 export class FavoritePage implements OnInit {
-  favorites: any;
+  favorites: any[];
 
   constructor() {
-    this.favorites = JSON.parse(localStorage.getItem("favorites") || '');
+    this.favorites = JSON.parse(localStorage.getItem("favorites") || '[]');
   }
 
   ngOnInit() {
