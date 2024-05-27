@@ -42,13 +42,13 @@ export class DetailsPage implements OnInit {
     if (localStorage.getItem("favorites")) {
       const getValues = [...JSON.parse(localStorage.getItem("favorites") || ''), this.objetoRecebido];
       localStorage.setItem("favorites", JSON.stringify(getValues));
-      this.msgInfo = "Pokémon adicionado a lista de favorito";
+      this.msgInfo = "Pokémon adicionado a lista de favoritos";
       this.isAlertOpen = isOpen;
       this.isFavorite = true;
       return;
     }
     localStorage.setItem("favorites", JSON.stringify([this.objetoRecebido]));
-    this.msgInfo = "Pokémon adicionado a lista de favorito";
+    this.msgInfo = "Pokémon adicionado a lista de favoritos";
     this.isAlertOpen = isOpen;
     this.isFavorite = true;
   }
